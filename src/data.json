@@ -1,0 +1,48 @@
+[{
+  "id": 1,
+  "description": "setup virtual office",
+  "type":  "foundation",
+  "done": false
+},
+{
+  "id": 2,
+  "description": "see mission and vision",
+  "type":  "foundation",
+  "done": false
+},
+{
+  "id": 3,
+  "description": "select business names",
+  "type":  "foundation",
+  "done": false
+},
+{
+  "id": 4,
+  "description": "buy domains",
+  "type":  "foundation",
+  "done": false
+},
+{
+  "id": 5,
+  "description": "create roadmap",
+  "type":  "discovery",
+  "done": false
+},
+{
+  "id": 6,
+  "description": "competitor analysis",
+  "type":  "discovery",
+  "done": false
+},
+{
+  "id": 7,
+  "description": "release marketing website",
+  "type":  "delivery",
+  "done": false
+},
+{
+  "id": 8,
+  "description": "release mvp",
+  "type":  "delivery",
+  "done": false
+}]
