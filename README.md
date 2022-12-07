@@ -1,5 +1,5 @@
 # Startup List
-Complete the phases in order to reveal a random fact. You must complete each phase before moving on to the next.
+Complete the phases in order to reveal a random fact. You must complete each phase before moving on to the next. Your progress is saved in your browsers local storage.
 
 ## To run the app
 
