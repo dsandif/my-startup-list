@@ -52,6 +52,24 @@ const Content = () => {
         const doneTasksGrouped = groupDataByProperty(tasks[heading], "done") // group tasks by "true" = done, "false" = not done
         const showHeadingCheck = !doneTasksGrouped.hasOwnProperty('false') // if false exists at all then the section is not done (dont show heading check)
 
+        //styles
+        const headingStyles = {width: '100%', textAlign: 'left', paddingLeft:'50%', textTransform: 'capitalize'}
+        const headingCheckStyles = {color: showHeadingCheck? 'aquamarine' : 'transparent', marginLeft: 10}
+        const headingNumStyles = {
+          display: 'inline-block',
+          marginRight: 10, 
+          verticalAlign: 'middle',
+          textAlign:'center', 
+          color:'#282c34', 
+          backgroundColor: 'aquamarine', 
+          fontSize:18, 
+          padding:5, 
+          height:25, 
+          width:25, 
+          borderRadius: '50%'
+        }
+        
+
         //format tasks for display
         const displayedTasks = taskItems.map(
           (taskItem) => 
@@ -65,10 +83,10 @@ const Content = () => {
         )
         
         return (
-          <div style={{width: '100%', textAlign: 'left', paddingLeft:'50%', textTransform: 'capitalize'}}key={headingNum}>
+          <div style={headingStyles}key={headingNum}>
             <h4>
-              <span style={{display: 'inline-block', marginRight: 10, verticalAlign: 'middle', textAlign:'center', color:'#282c34', backgroundColor: 'aquamarine', fontSize:18, padding:5, height:25, width:25, borderRadius: '50%'}}>{headingNum}</span>{`${heading}`} 
-              {<span style={{color: showHeadingCheck? 'aquamarine' : 'transparent', marginLeft:10}}>&#x2713;</span>}
+              <span style={headingNumStyles}>{headingNum}</span>{`${heading}`} 
+              {<span style={headingCheckStyles}>&#x2713;</span>}
             </h4>
             {displayedTasks}
           </div>
